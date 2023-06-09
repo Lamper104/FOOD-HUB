@@ -1,0 +1,300 @@
+
+
+                                            /* SUCURSALES */
+
+#todosucursales{
+  background-color: black
+}
+#sucu{
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+                                            .container {
+                                                width: 350px;
+                                                height: 450px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                position: relative;
+                                                border-radius: 3px;
+                                                border: 1px solid #396afc;
+                                                background: linear-gradient(to right, #005c97, #363795);
+                                                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                                padding-top: 30px;
+                                                margin-left: 20%;
+                                              }
+                                              .container form .descr {
+                                                font-size: 20px;
+                                                font-weight: 500;
+                                                color: #e8e8e8;
+                                                margin-bottom: 25px;
+                                                margin-top: 25px;
+                                                text-align: center;
+                                              }
+                                              .form {
+                                                display: flex;
+                                                flex-direction: column;
+                                              }
+                                              .input, textarea {
+                                                margin: 1em 0 1em 0;
+                                                width: 300px;
+                                                position: relative;
+                                              }
+                                              .input input, textarea {
+                                                font-size: 100%;
+                                                padding: 0.7em;
+                                                outline: none;
+                                                color: #e8e8e8;
+                                                border: none;
+                                                border-bottom: 2px solid #e8e8e8;
+                                                background: transparent;
+                                                border-radius: none;
+                                                width: 100%;
+                                                resize: none;
+                                              }
+                                              .input label {
+                                                font-size: 100%;
+                                                position: absolute;
+                                                left: 0;
+                                                color: #e8e8e8;
+                                                padding: 0.7em;
+                                                margin-left: 0.1em;
+                                                pointer-events: none;
+                                                transition: all 0.5s ease;
+                                                text-transform: uppercase;
+                                              }
+                                              .input :is(input:focus, input:valid)~label {
+                                                transform: translateY(-50%) scale(.9);
+                                                margin: 0em;
+                                                padding: 0.4em;
+                                                background: transparent;
+                                              }
+                                              .input textarea:focus ~ label,
+                                              .input textarea:valid ~ label {
+                                                transform: translateY(-50%) scale(.9);
+                                                margin: 0em;
+                                                padding: 0.4em;
+                                                background: transparent;
+                                              }
+                                              .inputGroup :is(input:focus, input:valid) {
+                                                border-color: rgb(37, 37, 211);
+                                              }
+                                              .form button {
+                                                color: #e8e8e8;
+                                                font-size: 15px;
+                                                align-self: flex-start;
+                                                padding: 0.6em;
+                                                border: none;
+                                                cursor: pointer;
+                                                margin-bottom: 50px;
+                                                background: transparent;
+                                                transition: all 0.3s ease-in-out;
+                                                position: relative;
+                                                overflow: hidden;
+                                              }
+                                              .form button:before {
+                                                content: "";
+                                                position: absolute;
+                                                bottom: 100%;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                background-color: #e8e8e8;
+                                                opacity: 0;
+                                                transition: opacity 0.3s ease-in-out;
+                                              }
+                                              .form button:hover:before {
+                                                opacity: 0.2;
+                                              }
+                                              .form button:hover {
+                                                transform: translateY(-3px);
+                                                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                                              }
+                                              
+                                              /* elige sucursales */
+                                              .ssucursal{
+                                                display: flex;
+                                                flex-direction: row;
+                                                gap: 45px;
+                                              }
+                                              
+                                              .ssucursal .redd {
+                                                background-color: #f43f5e;
+                                              }
+                                              .redd{
+                                                height: 150px !important;
+                                              }
+                                              
+                                              .ssucursal .bluee {
+                                                background-color: blue;
+                                                height: 150px !important;
+                                              }
+                                              
+                                              .ssucursal .greenn {
+                                                background-color: #22c55e;
+                                                height: 150px !important;
+                                              }
+                                              
+                                              .ssucursal .sucursall {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                flex-direction: column;
+                                                text-align: center;
+                                                height: 100px;
+                                                width: 250px;
+                                                border-radius: 10px;
+                                                color: white;
+                                                cursor: pointer;
+                                                transition: 400ms;
+                                              }
+                                              
+                                              .ssucursal .sucursall p.tip {
+                                                font-size: 1em;
+                                                font-weight: 700;
+                                              }
+                                              
+                                              .ssucursal .sucursall p.second-text {
+                                                font-size: .7em;
+                                              }
+                                              
+                                              .ssucursal .sucursall:hover {
+                                                transform: scale(1.1, 1.1);
+                                              }
+                                              
+                                              .ssucursal:hover > .sucursall:not(:hover) {
+                                                filter: blur(10px);
+                                                transform: scale(0.9, 0.9);
+                                              }
+                                              
+#botonBellaVista{
+  background-color: red;
+  border: solid black 5px;
+  border-radius: 10px;
+}
+#botonNordelta{
+  background-color: blue;
+  border: solid black 5px;
+  border-radius: 10px;
+}
+
+#botonCABA{
+  background-color: green;
+  border: solid black 5px;
+  border-radius: 10px;
+}
+
+
+.butonSuc {
+  width: 20%;
+  height: 20%;
+  font-size: 17px;
+  border-radius: 5px;
+  outline: 2px solid #2835ba;
+  outline-offset: 0px;
+  background: #2835ba;
+  border: 0;
+  font-weight: bolder;
+  color: white;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+
+.butonSuc:hover {
+  outline-offset: 3px;
+  outline: 3px solid #2835ba;
+}
+.linksuc{
+  text-decoration: none;
+}
+
+
+
+.tituloSucursal{
+  color: white;
+  text-align: center;
+  border: solid white 5px;
+  border-radius: 5px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+/* TODO BELLA VISTA */
+#todobellavista{
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  )
+  ,url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxENxWpn2dbf4kzetbEIlpraZDWgk1vV48lQ&usqp=CAU);
+  }
+
+
+.labell{
+  background-color: rgb(71, 71, 235) !important;
+  color: whitesmoke !important;
+}
+
+.doscajas{
+  width: 80% !important;
+  text-align: center !important;
+  background-image: url(https://i.ibb.co/sRD08pT/fondo-madera.jpg) !important;
+height: 60% !important;
+}
+.mapas{
+  margin-left: 22% !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* boton */
+.volver {
+  display: flex;
+  height: 3em;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  margin-left: 25%;
+ }
+ 
+ .volver > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ .volver:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ .volver:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+ }
+
+.gridbotones{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
